@@ -1,3 +1,4 @@
+
 import {
   Box,
   chakra,
@@ -7,7 +8,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react"
-import { FaTwitter, FaYoutube } from "react-icons/fa"
+import { FaLinkedin, FaGithub } from "react-icons/fa"
 import { ReactNode } from "react"
 
 const SocialButton = ({
@@ -48,6 +49,8 @@ export default function Footer() {
     <Box
       bg={useColorModeValue("gray.50", "gray.700")}
       color={useColorModeValue("gray.700", "gray.200")}
+     
+    
     >
       <Container
         as={Stack}
@@ -58,16 +61,16 @@ export default function Footer() {
         justify={{ base: "center", md: "space-between" }}
         align={{ base: "center", md: "center" }}
       >
-        <Text>© 2023 Thankful Thoughts.</Text>
+        <Text>© 2023 Oss Dev.</Text>
         <Stack direction={"row"} spacing={6}>
-          <SocialButton label={"Twitter"} href={"https://twitter.com/hqasmei"}>
-            <FaTwitter />
+          <SocialButton label={"LinkedIn"} href={"https://www.linkedin.com/in/oscar-alatrista/"}>
+            <FaLinkedin />
           </SocialButton>
           <SocialButton
-            label={"YouTube"}
-            href={"https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA"}
+            label={"GitHub"}
+            href={"https://github.com/OssFit"}
           >
-            <FaYoutube />
+            <FaGithub />
           </SocialButton>
         </Stack>
       </Container>
