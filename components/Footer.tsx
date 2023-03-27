@@ -9,7 +9,6 @@ import {
   } from "@chakra-ui/react"
   import { FaLinkedin, FaGithub } from "react-icons/fa"
   import { ReactNode } from "react"
-  import Image from "next/image"
   
   const SocialButton = ({
     children,
@@ -21,7 +20,6 @@ import {
     href: string
   }) => {
     return (
-      
       <chakra.button
         bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
         rounded={"full"}
@@ -50,9 +48,7 @@ import {
       <Box
         bg={useColorModeValue("gray.50", "gray.700")}
         color={useColorModeValue("gray.700", "gray.200")}
-        bottom={0}
-        left={0}
-        right={0}
+       
       
       >
         <Container
@@ -65,7 +61,6 @@ import {
           align={{ base: "center", md: "center" }}
         >
           <Text>© 2023 Oss Dev.</Text>
-     
           <Stack direction={"row"} spacing={6}>
             <SocialButton label={"LinkedIn"} href={"https://www.linkedin.com/in/oscar-alatrista/"}>
               <FaLinkedin />

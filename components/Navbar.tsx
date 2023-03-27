@@ -29,7 +29,7 @@ export default function Navbar() {
               lineHeight={1.2}
               fontSize={{ base: "lg", md: "3xl" }}
             >
-              Meal Genius 🧞‍♂️
+              Meal Genius 
             </Text>
           </Box>
 
