@@ -87,7 +87,7 @@ export default function Home() {
     category: string,
     aliments: string,
      ) {
-    const recipiePrompt =`Prepare a delicious and practical ${category} with the following ingredients: ${aliments}`
+    const recipiePrompt =`Prepare a delicious and comfortable ${category} with the following ingredients: ${aliments}`
 
       if (category == "breakfast") {
       try {
@@ -151,7 +151,7 @@ export default function Home() {
               </Text>
               {" and "}
               <Text as={"span"} color={"orange.400"}>
-                 Practice!
+                 Comfortable!
               </Text>
             </Heading>
           </Box>
