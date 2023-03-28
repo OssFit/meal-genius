@@ -87,7 +87,7 @@ export default function Home() {
     category: string,
     aliments: string,
      ) {
-    const recipiePrompt =`Prepare a delicious and comfortable ${category} with the following ingredients: ${aliments}`
+    const recipiePrompt =`Prepare a delicious and comfortable ${category} including the following ingredients: ${aliments}`
 
       if (category == "breakfast") {
       try {
@@ -190,8 +190,8 @@ export default function Home() {
                           </FormLabel>
                           <Field
                             as={Input}
-                            id="breakfast"
-                            name="breakfast"
+                            id="aliments"
+                            name="aliments"
                             type="name"
                             variant="filled"
                             bg="gray.200"
@@ -213,8 +213,8 @@ export default function Home() {
                           </FormLabel>
                           <Field
                             as={Input}
-                            id="lunch"
-                            name="lunch"
+                            id="aliments"
+                            name="aliments"
                             type="name"
                             variant="filled"
                             bg="gray.200"
@@ -233,8 +233,8 @@ export default function Home() {
                           </FormLabel>
                           <Field
                             as={Input}
-                            id="dinner"
-                            name="dinner"
+                            id="aliments"
+                            name="aliments"
                             type="name"
                             variant="filled"
                             bg="gray.200"
@@ -253,8 +253,8 @@ export default function Home() {
                           </FormLabel>
                           <Field
                             as={Input}
-                            id="dessert"
-                            name="dessert"
+                            id="aliments"
+                            name="aliments"
                             type="name"
                             variant="filled"
                             bg="gray.200"
