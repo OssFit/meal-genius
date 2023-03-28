@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <>
         <Box
-        bg={useColorModeValue("gray.200", "gray.700")}
+        bg={useColorModeValue("gray.200", "gray.800")}
         px={{ base: 4, md: 300 }}
         py={4}
        

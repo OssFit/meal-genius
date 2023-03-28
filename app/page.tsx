@@ -87,7 +87,7 @@ export default function Home() {
     category: string,
     aliments: string,
      ) {
-    const recipiePrompt =`Prepare a delicious and comfortable ${category} including the following ingredients: ${aliments}`
+    const recipiePrompt =`Prepare a delicious and comfortable ${category} including the following ingredients: ${aliments}.Tell me Ingredients, Preparation and calories from the recipie`
 
       if (category == "breakfast") {
       try {
@@ -143,7 +143,7 @@ export default function Home() {
               fontWeight={700}
               fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}
               lineHeight={"110%"}
-              mt='-20'
+              mt='-15'
             >
            Generate a recipie<br />
               <Text as={"span"} color={"purple.400"}>
@@ -156,7 +156,7 @@ export default function Home() {
             </Heading>
           </Box>
 
-          <Box p={6} rounded="md" w={80} bg="white" color="black" >
+          <Box p={6} rounded="md" w={80} bg="gray.300" color="black" >
             <Formik
               initialValues={initialValues}
               onSubmit={(values, { resetForm }) => {
@@ -171,10 +171,10 @@ export default function Home() {
             >
               {({ handleSubmit, values, errors }) => (
                 <form onSubmit={handleSubmit}>
-                  <VStack spacing={4} align="flex-start">
+                  <VStack spacing={2} align="flex-start">
                     <FormControl isRequired>
                       <FormLabel htmlFor="category">Select an option</FormLabel>
-                      <SelectControl name="category">
+                      <SelectControl bg='gray.200' name="category">
                         <option value="breakfast">BreakFast</option>
                         <option value="lunch">Lunch</option>
                         <option value="dinner">Dinner</option>
@@ -273,7 +273,7 @@ export default function Home() {
               )}
             </Formik>
             {recipieLoading && (
-              <Box py={4} >
+              <Box py={4} bgColor='black'>
                 <Spinner />
               </Box>
             )}
@@ -295,7 +295,7 @@ export default function Home() {
                 border: "3px solid #D6BCFA",
               },
             }}
-             bg="white" p={6} rounded="md" w='70vw'>
+             bg="gray.300" p={6} rounded="md" w='70vw'>
               <Text fontWeight={700} color={"purple.400"}>
                 {recipie} 
               </Text>
