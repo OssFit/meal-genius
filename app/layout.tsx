@@ -18,6 +18,7 @@ export default function RootLayout({
           <link rel="image/x-icon" href="favicon.ico" />
           <link rel="icon" type="image/png" sizes="32x32" href="logo.png"/>
           <link rel="icon" type="image/png" sizes="16x16" href="logo.png"/>
+          <meta property="og:image" content="preview.jpeg" />
 </head>
       
       <title>Meal Genius</title>
